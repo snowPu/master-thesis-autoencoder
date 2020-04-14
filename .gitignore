@@ -1,6 +1,6 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-dataset
+dataset/*
 image_downscaling/weights
 image_downscaling/new_weights
 image_downscaling/input
