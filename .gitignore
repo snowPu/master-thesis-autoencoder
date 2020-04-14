@@ -4,4 +4,4 @@
 /image_downscaling/weights
 /image_downscaling/new_weights
 /image_downscaling/input
-/image_downscaling/conv_test
+./image_downscaling/conv_test
