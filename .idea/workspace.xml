@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c48734c0-a00d-456a-a0c8-cfbc0e8e2ec5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_2.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/input/0.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/input/3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd1527b8t.png" afterPath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd1527b8t.png" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd212c15t.png" afterPath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd212c15t.png" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd2dab1ft.png" afterPath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd2dab1ft.png" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd3134e2t.png" afterPath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd3134e2t.png" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd3b9c86t.png" afterPath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd3b9c86t.png" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd425861t.png" afterPath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd425861t.png" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd47b38ct.png" afterPath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd47b38ct.png" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd549fe5t.png" afterPath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd549fe5t.png" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd5b86e9t.png" afterPath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd5b86e9t.png" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd7412c7t.png" afterPath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd7412c7t.png" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd82b63ft.png" afterPath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd82b63ft.png" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd93b7cbt.png" afterPath="$PROJECT_DIR$/image_downscaling/conv_test/input/rcd93b7cbt.png" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/output/0.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/output/3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/output/rcd3b9c86t.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/output/rcd549fe5t.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_test/output/rcd7412c7t.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/ae_weights.h5" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/decoder_weights.h5" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/encoder_weights.h5" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,8 +16,8 @@
       <file leaf-file-name="conv_autoencoder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-410">
-              <caret line="162" column="41" lean-forward="true" selection-start-line="162" selection-start-column="41" selection-end-line="162" selection-end-column="41" />
+            <state relative-caret-position="-1498">
+              <caret line="126" column="74" lean-forward="true" selection-start-line="126" selection-start-column="74" selection-end-line="126" selection-end-column="74" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -67,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-187">
-              <caret line="25" column="56" lean-forward="true" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+              <caret line="25" column="56" lean-forward="false" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -655,7 +629,7 @@
     <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
-          <caret line="25" column="56" lean-forward="true" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+          <caret line="25" column="56" lean-forward="false" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -664,8 +638,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-410">
-          <caret line="162" column="41" lean-forward="true" selection-start-line="162" selection-start-column="41" selection-end-line="162" selection-end-column="41" />
+        <state relative-caret-position="-1498">
+          <caret line="126" column="74" lean-forward="true" selection-start-line="126" selection-start-column="74" selection-end-line="126" selection-end-column="74" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

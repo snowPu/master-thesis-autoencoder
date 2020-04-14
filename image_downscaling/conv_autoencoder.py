@@ -121,13 +121,13 @@ class AutoEncoder:
         cnt = 0
 
         temp = Conv2D(16, (3, 3), activation='relu', padding='same')(inputs)
-        # temp = Conv2D(16, (3, 3), activation='relu', padding='same')(temp)
+        temp = Conv2D(16, (3, 3), activation='relu', padding='same')(temp)
         temp = MaxPooling2D((2, 2), padding='same')(temp)
         temp = Conv2D(32, (3, 3), activation='relu', padding='same')(temp)
-        # temp = Conv2D(32, (3, 3), activation='relu', padding='same')(temp)
+        temp = Conv2D(32, (3, 3), activation='relu', padding='same')(temp)
         temp = MaxPooling2D((2, 2), padding='same')(temp)
         temp = Conv2D(64, (3, 3), activation='relu', padding='same')(temp)
-        # temp = Conv2D(64, (3, 3), activation='relu', padding='same')(temp)
+        temp = Conv2D(64, (3, 3), activation='relu', padding='same')(temp)
         encoded = MaxPooling2D((2, 2), padding='same')(temp)
         # temp = Conv2D(64, (3, 3), activation='relu', padding='same')(temp)
         # encoded = MaxPooling2D((2, 2), padding='same')(temp)
@@ -156,10 +156,10 @@ class AutoEncoder:
         cnt = 0
 
         temp = Conv2D(64, (3, 3), activation='relu', padding='same')(inputs)
-        # temp = Conv2D(64, (3, 3), activation='relu', padding='same')(temp)
+        temp = Conv2D(64, (3, 3), activation='relu', padding='same')(temp)
         temp = UpSampling2D((2, 2))(temp)
         temp = Conv2D(32, (3, 3), activation='relu', padding='same')(temp)
-        # temp = Conv2D(32, (3, 3), activation='relu', padding='same')(temp)
+        temp = Conv2D(32, (3, 3), activation='relu', padding='same')(temp)
         temp = UpSampling2D((2, 2))(temp)
         # temp = Conv2D(32, (3, 3), activation='relu', padding='same')(temp)
         # temp = UpSampling2D((2, 2))(temp)
