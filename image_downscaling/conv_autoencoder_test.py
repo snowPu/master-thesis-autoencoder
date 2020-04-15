@@ -3,14 +3,14 @@ import numpy as np
 import os
 import cv2
 
-
-loss = 'perceptual_ssim'
-optimizer = 'adam'
+#
+# loss = 'perceptual_ssim'
+# optimizer = 'adam'
 
 # model_folder = 'weights/weights_' + loss + '_' + optimizer
-model_folder_name = 'weights_perceptual_ssim_nadam_80_0.0002_0.9_0.999_1586406924.587'
+model_folder_name = 'weights_perceptual_ssim_mse_nadam_500_0.0002_0.9_0.999_1586947041.876116'
 model_folder = 'weights/' + model_folder_name
-output_folder = model_folder_name
+output_folder = 'autoencoder/' + model_folder_name
 
 encoder = load_model(r'./' + model_folder + '/encoder_weights.h5', compile=False)
 decoder = load_model(r'./' + model_folder + '/decoder_weights.h5', compile=False)

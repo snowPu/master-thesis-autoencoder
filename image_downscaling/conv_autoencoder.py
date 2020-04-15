@@ -240,8 +240,8 @@ class AutoEncoder:
         epoch_set = range(epochs)
 
         plt.figure()
-        plt.plot(epoch_set, loss, 'bo', label='Training loss')
-        plt.plot(epoch_set, val_loss, 'b', label='Validation loss')
+        plt.plot(epoch_set, loss, color='orange', label='Training loss')
+        plt.plot(epoch_set, val_loss, color='blue', label='Validation loss')
         plt.title('Training and validation loss')
         plt.legend()
         plt.savefig(fig_path)
