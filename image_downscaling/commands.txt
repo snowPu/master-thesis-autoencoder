@@ -1,0 +1,7 @@
+ssh into the server
+
+ssh -i "C:/Users/sukan/.ssh/lrz_gpu_access" ubuntu@10.195.2.3
+
+
+enter docker container
+
