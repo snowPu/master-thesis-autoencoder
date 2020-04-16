@@ -5,3 +5,5 @@ ssh -i "C:/Users/sukan/.ssh/lrz_gpu_access" ubuntu@10.195.2.3
 
 enter docker container
 
+docker exec -it c533883d353e /bin/bash
+

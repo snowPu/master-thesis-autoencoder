@@ -47,6 +47,9 @@ def SSIMLoss(y_true, y_pred):
 def VGG_SSIM_Loss(y_true, y_pred):
     return 0.6 * VGGloss(y_true, y_pred) + 0.4 * SSIMLoss(y_true, y_pred)
 
+def VGG_MSE_Loss(y_true, y_pred):
+    return 0.8 * VGGloss(y_true, y_pred) + 0.2 * tf.keras.losses.MSE(y_true, y_pred)
+
 def VGG_SSIM_MSE_Loss(y_true, y_pred):
     return VGGloss(y_true, y_pred) * .5 + SSIMLoss(y_true, y_pred) * .3 + tf.keras.losses.MSE(y_true, y_pred) * .2
 
@@ -91,7 +94,8 @@ class AutoEncoder:
             'ssim': SSIMLoss,
             'mse': 'mse',
             'perceptual_ssim': VGG_SSIM_Loss,
-            'perceptual_ssim_mse': VGG_SSIM_MSE_Loss
+            'perceptual_ssim_mse': VGG_SSIM_MSE_Loss,
+            'perceptual_mse': VGG_MSE_Loss
             # 'perceptual_ssim_mse': [VGGloss, SSIMLoss, 'mse']
         }
 

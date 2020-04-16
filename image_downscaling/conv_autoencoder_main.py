@@ -36,7 +36,7 @@ x = np.array(x) / 255
 y = np.array(y) / 255
 
 
-LOSS = 'perceptual'
+LOSS = 'perceptual_mse'
 EPOCHS = 300
 BATCH_SIZE = 32
 
