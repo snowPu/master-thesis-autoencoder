@@ -2,8 +2,38 @@ ssh into the server
 
 ssh -i "C:/Users/sukan/.ssh/lrz_gpu_access" ubuntu@10.195.2.3
 
+## copy dataset
 
-enter docker container
+scp -i "C:/Users/sukan/.ssh/lrz_gpu_access" file.ext ubuntu@10.195.2.3:~/
+
+## run docker
+
+docker run --gpus all --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 -it  nvcr.io/nvidia/tensorflow:20.02-tf1-py3
+
+## copy content to docker container
+
+docker cp dataset.zip c533883d353e:/workspace/master-thesis-autoencoder/dataset.zip
+
+
+## enter docker container
 
 docker exec -it c533883d353e /bin/bash
 
+cd master-thesis-autoencoder
+
+unzip dataset.zip
+
+mv final_dataset dataset
+
+cd image_downscaling
+
+## install dependencies
+
+apt-get update
+apt-get install -y libsm6 libxext6 libxrender-dev
+pip install keras
+pip install opencv-python
+
+## run python
+
+python conv_autoencoder_main.py
