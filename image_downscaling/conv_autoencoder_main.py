@@ -36,8 +36,8 @@ x = np.array(x) / 255
 y = np.array(y) / 255
 
 
-LOSS = 'perceptual_msssim_mse'
-EPOCHS = 800
+LOSS = 'perceptual_msssim'
+EPOCHS = 1000
 BATCH_SIZE = 32
 
 OPTIMIZER_NAME = 'nadam'
