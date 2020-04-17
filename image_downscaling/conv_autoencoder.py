@@ -44,14 +44,23 @@ def VGGloss(y_true, y_pred): # Note the parameter order
 def SSIMLoss(y_true, y_pred):
   return 1 - tf.reduce_mean(tf.image.ssim(y_true, y_pred, 1.0))
 
+def MSSSIMLoss(y_true, y_pred):
+  return 1 - tf.reduce_mean(tf.image.ssim_multiscale(y_true, y_pred, 1.0))
+
 def VGG_SSIM_Loss(y_true, y_pred):
     return 0.6 * VGGloss(y_true, y_pred) + 0.4 * SSIMLoss(y_true, y_pred)
+
+def VGG_MSSSIM_Loss(y_true, y_pred):
+    return 0.6 * VGGloss(y_true, y_pred) + 0.4 * MSSSIMLoss(y_true, y_pred)
 
 def VGG_MSE_Loss(y_true, y_pred):
     return 0.8 * VGGloss(y_true, y_pred) + 0.2 * tf.keras.losses.MSE(y_true, y_pred)
 
 def VGG_SSIM_MSE_Loss(y_true, y_pred):
-    return VGGloss(y_true, y_pred) * .5 + SSIMLoss(y_true, y_pred) * .3 + tf.keras.losses.MSE(y_true, y_pred) * .2
+    return VGGloss(y_true, y_pred) * .5 + SSIMLoss(y_true, y_pred) * .4 + tf.keras.losses.MSE(y_true, y_pred) * .1
+
+def VGG_MSSSIM_MSE_Loss(y_true, y_pred):
+    return VGGloss(y_true, y_pred) * .5 + MSSSIMLoss(y_true, y_pred) * .4 + tf.keras.losses.MSE(y_true, y_pred) * .1
 
 
 class AutoEncoder:
@@ -92,9 +101,12 @@ class AutoEncoder:
         self.losses = {
             'perceptual': VGGloss,
             'ssim': SSIMLoss,
+            'msssim': MSSSIMLoss,
             'mse': 'mse',
             'perceptual_ssim': VGG_SSIM_Loss,
+            'perceptual_msssim': VGG_MSSSIM_Loss,
             'perceptual_ssim_mse': VGG_SSIM_MSE_Loss,
+            'perceptual_msssim_mse': VGG_MSSSIM_MSE_Loss,
             'perceptual_mse': VGG_MSE_Loss
             # 'perceptual_ssim_mse': [VGGloss, SSIMLoss, 'mse']
         }
