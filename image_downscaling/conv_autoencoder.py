@@ -45,7 +45,7 @@ def SSIMLoss(y_true, y_pred):
   return 1 - tf.reduce_mean(tf.image.ssim(y_true, y_pred, 1.0))
 
 def MSSSIMLoss(y_true, y_pred):
-  return 1 - tf.reduce_mean(tf.image.ssim_multiscale(y_true, y_pred, 1.0))
+  return 1 - tf.reduce_mean(tf.image.ssim_multiscale(y_true, y_pred, 1.0, power_factors=(0.0448, 0.2856, 0.3001, 0.2363)))
 
 def VGG_SSIM_Loss(y_true, y_pred):
     return 0.6 * VGGloss(y_true, y_pred) + 0.4 * SSIMLoss(y_true, y_pred)
@@ -106,7 +106,7 @@ class AutoEncoder:
             'perceptual_ssim': VGG_SSIM_Loss,
             'perceptual_msssim': VGG_MSSSIM_Loss,
             'perceptual_ssim_mse': VGG_SSIM_MSE_Loss,
-            'perceptual_msssim_mse': VGG_MSSSIM_MSE_Loss,
+                'perceptual_msssim_mse': VGG_MSSSIM_MSE_Loss,
             'perceptual_mse': VGG_MSE_Loss
             # 'perceptual_ssim_mse': [VGGloss, SSIMLoss, 'mse']
         }
