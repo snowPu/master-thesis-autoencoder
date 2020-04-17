@@ -1,10 +1,10 @@
 ssh into the server
 
-ssh -i "C:/Users/sukan/.ssh/lrz_gpu_access" ubuntu@10.195.2.3
+ssh -i "C:/Users/sukan/.ssh/lrz_gpu_access" ubuntu@10.195.2.1
 
 ## copy dataset
 
-scp -i "C:/Users/sukan/.ssh/lrz_gpu_access" file.ext ubuntu@10.195.2.3:~/
+scp -i "C:/Users/sukan/.ssh/lrz_gpu_access" dataset.zip ubuntu@10.195.2.1:~/
 
 ## run docker
 
@@ -12,13 +12,14 @@ docker run --gpus all --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 
 
 ## copy content to docker container
 
-docker cp dataset.zip c533883d353e:/workspace/master-thesis-autoencoder/dataset.zip
+docker cp dataset.zip 13ede8f73894:/workspace/master-thesis-autoencoder/dataset.zip
 
 
 ## enter docker container
 
-docker exec -it c533883d353e /bin/bash
+docker exec -it 13ede8f73894 /bin/bash
 
+git clone https://github.com/snowPu/master-thesis-autoencoder.git
 cd master-thesis-autoencoder
 
 unzip dataset.zip
