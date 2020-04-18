@@ -37,7 +37,7 @@ y = np.array(y) / 255
 
 
 LOSS = 'ssim'
-EPOCHS = 600
+EPOCHS = 300
 BATCH_SIZE = 32
 
 OPTIMIZER_NAME = 'nadam'
