@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c48734c0-a00d-456a-a0c8-cfbc0e8e2ec5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="750">
-      <file leaf-file-name="conv_autoencoder_main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="conv_autoencoder_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="287">
@@ -26,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conv_autoencoder_test.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="conv_autoencoder_test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -65,8 +65,8 @@
       <file leaf-file-name="conv_autoencoder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="53" column="75" lean-forward="true" selection-start-line="53" selection-start-column="75" selection-end-line="53" selection-end-column="75" />
+            <state relative-caret-position="2465">
+              <caret line="163" column="49" lean-forward="false" selection-start-line="163" selection-start-column="49" selection-end-line="163" selection-end-column="49" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -112,9 +112,9 @@
         <option value="$PROJECT_DIR$/image_downscaling/test.py" />
         <option value="$PROJECT_DIR$/image_downscaling/main.py" />
         <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_2.py" />
-        <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" />
-        <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" />
         <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" />
+        <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" />
+        <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" />
       </list>
     </option>
   </component>
@@ -784,32 +784,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="53" column="75" lean-forward="true" selection-start-line="53" selection-start-column="75" selection-end-line="53" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="39" column="11" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2465">
+          <caret line="163" column="49" lean-forward="false" selection-start-line="163" selection-start-column="49" selection-end-line="163" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
