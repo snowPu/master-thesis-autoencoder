@@ -13,7 +13,6 @@ from keras.applications.vgg19 import VGG19
 import keras.backend as keras_backend
 from matplotlib import pyplot as plt
 from datetime import datetime
-from keras_contrib.losses import dssim
 
 # Define VGG Model
 
