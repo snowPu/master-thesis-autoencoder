@@ -36,7 +36,7 @@ x = np.array(x) / 255
 y = np.array(y) / 255
 
 
-LOSS = 'perceptual_msssim'
+LOSS = 'perceptual_ssim'
 EPOCHS = 1000
 BATCH_SIZE = 32
 
