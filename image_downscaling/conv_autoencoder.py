@@ -13,6 +13,7 @@ from keras.applications.vgg19 import VGG19
 import keras.backend as keras_backend
 from matplotlib import pyplot as plt
 from datetime import datetime
+from keras.callbacks import CSVLogger
 
 # Define VGG Model
 
@@ -228,17 +229,22 @@ class AutoEncoder:
     def fit(self, batch_size=5, epochs=300, optimizer='SGD', loss='mse'):
         self.optimizer = optimizer
         self.model.compile(optimizer=self.optimizers[optimizer], loss=self.losses[loss])
-        log_dir = './log/'
+        log_file = './logs/' + 'log_' + str(epochs) + '_' + \
+                   str(self.optimizer_parameters_map[self.optimizer]['lr']) + '_' + \
+                   str(self.optimizer_parameters_map[self.optimizer]['beta_1']) + '_' + \
+                   str(self.optimizer_parameters_map[self.optimizer]['beta_2']) + '_' + \
+                   str(datetime.timestamp(datetime.now())) + '.csv'
         # tbCallBack = keras.callbacks.TensorBoard(log_dir=log_dir,
         #                                          histogram_freq=0,
         #                                          write_graph=True,
         #                                          write_images=True)
         # callbacks=[tbCallBack],
         # need to change output here later on if we want to compare with lower resolution which is a different data set
+        csv_logger = CSVLogger(log_file, append=True, separator=';')
         return self.model.fit(self.x, self.y,
                               epochs=epochs,
                               batch_size=batch_size,
-
+                              callbacks=[csv_logger],
                               validation_split=0.2)
 
     def plot_history(self, trained, epochs, fig_folder):
