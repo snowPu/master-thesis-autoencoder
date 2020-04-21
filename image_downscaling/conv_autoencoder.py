@@ -73,6 +73,7 @@ class AutoEncoder:
         self.y = y
         self.init_encoder = encoder_weights
         self.init_decoder = decoder_weights
+        self.current_weights_folder = ''
 
         # ADAM
         self.adam_parameters = {
@@ -235,22 +236,31 @@ class AutoEncoder:
     def fit(self, batch_size=5, epochs=300, optimizer='SGD', loss='mse'):
         self.optimizer = optimizer
         self.model.compile(optimizer=self.optimizers[optimizer], loss=self.losses[loss])
+        weights_folder = r'./weights/weights_' + loss + '_' + optimizer + '_' + str(epochs)
+        self.current_weights_folder = weights_folder + '_' + \
+                                 str(self.optimizer_parameters_map[self.optimizer]['lr']) + '_' + \
+                                 str(self.optimizer_parameters_map[self.optimizer]['beta_1']) + '_' + \
+                                 str(self.optimizer_parameters_map[self.optimizer]['beta_2']) + '_' + \
+                                 str(datetime.timestamp(datetime.now()))
+        if not os.path.exists(self.current_weights_folder):
+            os.mkdir(self.current_weights_folder)
+        ae_file = self.current_weights_folder + '/ae_weights_'
+
+
         log_file = './logs/' + 'log_' + str(epochs) + '_' + \
                    str(self.optimizer_parameters_map[self.optimizer]['lr']) + '_' + \
                    str(self.optimizer_parameters_map[self.optimizer]['beta_1']) + '_' + \
                    str(self.optimizer_parameters_map[self.optimizer]['beta_2']) + '_' + \
                    str(datetime.timestamp(datetime.now())) + '.csv'
-        # tbCallBack = keras.callbacks.TensorBoard(log_dir=log_dir,
-        #                                          histogram_freq=0,
-        #                                          write_graph=True,
-        #                                          write_images=True)
-        # callbacks=[tbCallBack],
+
         # need to change output here later on if we want to compare with lower resolution which is a different data set
         csv_logger = CSVLogger(log_file, append=True, separator=';')
+        mc = keras.callbacks.ModelCheckpoint(ae_file + '{epoch:08d}.h5',
+                                             save_weights_only=True, period=1)
         return self.model.fit(self.x, self.y,
                               epochs=epochs,
                               batch_size=batch_size,
-                              callbacks=[csv_logger],
+                              callbacks=[mc, csv_logger],
                               validation_split=0.2)
 
     def plot_history(self, trained, epochs, fig_folder):
@@ -280,16 +290,17 @@ class AutoEncoder:
     def save(self, weights_folder='weights'):
         # if not os.path.exists(weights_folder):
         #     os.mkdir(weights_folder)
-        current_weights_folder = weights_folder + '_' + \
-                                 str(self.optimizer_parameters_map[self.optimizer]['lr']) + '_' + \
-                                 str(self.optimizer_parameters_map[self.optimizer]['beta_1']) + '_' + \
-                                 str(self.optimizer_parameters_map[self.optimizer]['beta_2']) + '_' + \
-                                 str(datetime.timestamp(datetime.now()))
-        os.mkdir(current_weights_folder)
+        # current_weights_folder = weights_folder + '_' + \
+        #                          str(self.optimizer_parameters_map[self.optimizer]['lr']) + '_' + \
+        #                          str(self.optimizer_parameters_map[self.optimizer]['beta_1']) + '_' + \
+        #                          str(self.optimizer_parameters_map[self.optimizer]['beta_2']) + '_' + \
+        #                          str(datetime.timestamp(datetime.now()))
+        if not os.path.exists(self.current_weights_folder):
+            os.mkdir(self.current_weights_folder)
 
-        encoder_file = current_weights_folder + '/encoder_weights.h5'
-        decoder_file = current_weights_folder + '/decoder_weights.h5'
-        ae_file = current_weights_folder + '/ae_weights.h5'
+        encoder_file = self.current_weights_folder + '/encoder_weights.h5'
+        decoder_file = self.current_weights_folder + '/decoder_weights.h5'
+        ae_file = self.current_weights_folder + '/ae_weights_final.h5'
 
         # self.encoder.save(encoder_file)
         # self.decoder.save(decoder_file)
