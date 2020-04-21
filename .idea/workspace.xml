@@ -50,8 +50,8 @@
       <file leaf-file-name="conv_autoencoder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="219" column="43" lean-forward="true" selection-start-line="219" selection-start-column="43" selection-end-line="219" selection-end-column="43" />
+            <state relative-caret-position="564">
+              <caret line="216" column="104" lean-forward="false" selection-start-line="216" selection-start-column="104" selection-end-line="216" selection-end-column="104" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -786,8 +786,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="219" column="43" lean-forward="true" selection-start-line="219" selection-start-column="43" selection-end-line="219" selection-end-column="43" />
+        <state relative-caret-position="564">
+          <caret line="216" column="104" lean-forward="false" selection-start-line="216" selection-start-column="104" selection-end-line="216" selection-end-column="104" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

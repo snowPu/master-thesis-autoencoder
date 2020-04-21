@@ -207,14 +207,14 @@ class AutoEncoder:
 
         # decoder
 
-        up5 = Conv2D(128, (3, 3), activation='relu', padding='same')(Conv2DTranspose(128, (3, 3), (2, 2))(drop4)) # 64
+        up5 = Conv2D(128, (3, 3), activation='relu', padding='same')(Conv2DTranspose(128, (3, 3), strides=(2, 2))(drop4)) # 64
         merge5 = concatenate([drop3, up5], axis=3)
         conv5 = Conv2D(128, (3, 3), activation='relu', padding='same')(merge5)
         conv5 = BatchNormalization()(conv5)
         conv5 = Conv2D(128, (3, 3), activation='relu', padding='same')(conv5)
         conv5 = BatchNormalization()(conv5)
 
-        up6 = Conv2D(64, (3, 3), activation='relu', padding='same')(Conv2DTranspose(64, (3, 3), (2, 2))(conv5)) # 128
+        up6 = Conv2D(64, (3, 3), activation='relu', padding='same')(Conv2DTranspose(64, (3, 3), strides=(2, 2))(conv5)) # 128
         merge6 = concatenate([conv2, up6], axis=3)
         conv6 = Conv2D(64, (3, 3), activation='relu', padding='same')(merge6)
         conv6 = BatchNormalization()(conv6)
