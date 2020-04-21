@@ -1,7 +1,7 @@
 import keras
 from keras.layers import Input, Dense
 import keras
-from keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D
+from keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, Dropout, concatenate
 from keras.layers import Input, Dense
 from keras.models import Model
 import numpy as np
@@ -137,27 +137,15 @@ class AutoEncoder:
         # temp = inputs
         cnt = 0
 
-        temp = Conv2D(16, (3, 3), activation='relu', padding='same')(inputs)
-        temp = Conv2D(16, (3, 3), activation='relu', padding='same')(temp)
-        temp = MaxPooling2D((2, 2), padding='same')(temp)
-        temp = Conv2D(32, (3, 3), activation='relu', padding='same')(temp)
-        temp = Conv2D(32, (3, 3), activation='relu', padding='same')(temp)
-        temp = MaxPooling2D((2, 2), padding='same')(temp)
-        temp = Conv2D(64, (3, 3), activation='relu', padding='same')(temp)
-        temp = Conv2D(64, (3, 3), activation='relu', padding='same')(temp)
-        encoded = MaxPooling2D((2, 2), padding='same')(temp)
-        # temp = Conv2D(64, (3, 3), activation='relu', padding='same')(temp)
-        # encoded = MaxPooling2D((2, 2), padding='same')(temp)
-        #
-        # while (current_dim > self.encoding_dim):
-        #     if cnt == 0:
-        #         temp = Conv2D(16, (3, 3), activation='relu', padding='same')(temp)
-        #     else:
-        #         temp = Conv2D(8, (3, 3), activation='relu', padding='same')(temp)
-        #     temp = MaxPooling2D((2, 2), padding='same')(temp)
-        #     current_dim = math.ceil(current_dim / 2)
-        #     cnt = cnt + 1
-        # encoded = temp
+        conv1 = Conv2D(16, (3, 3), activation='relu', padding='same')(inputs)
+        conv1 = Conv2D(16, (3, 3), activation='relu', padding='same')(conv1)
+        pool1 = MaxPooling2D((2, 2), padding='same')(conv1)
+        conv2 = Conv2D(32, (3, 3), activation='relu', padding='same')(pool1)
+        conv2 = Conv2D(32, (3, 3), activation='relu', padding='same')(conv2)
+        pool2 = MaxPooling2D((2, 2), padding='same')(conv2)
+        conv3 = Conv2D(64, (3, 3), activation='relu', padding='same')(pool2)
+        conv3 = Conv2D(64, (3, 3), activation='relu', padding='same')(conv3)
+        encoded = MaxPooling2D((2, 2), padding='same')(conv3)
 
         model = Model(inputs, encoded)
         if self.init_encoder is not None:
@@ -181,19 +169,6 @@ class AutoEncoder:
         # temp = Conv2D(32, (3, 3), activation='relu', padding='same')(temp)
         # temp = UpSampling2D((2, 2))(temp)
         decoded = Conv2D(3, (3, 3), activation='sigmoid', padding='same')(temp)
-
-        # while (current_dim < self.output_shape[0]):
-        #     current_dim = current_dim * 2
-        #     if cnt == self.output_shape[0]:
-        #         temp = Conv2D(16, (3, 3), activation='relu', padding='same')(temp)
-        #     else:
-        #         temp = Conv2D(8, (3, 3), activation='relu', padding='same')(temp)
-        #     temp = UpSampling2D((2, 2))(temp)
-        #
-        #     cnt = cnt + 1
-        # decoded = Conv2D(3, (3, 3), activation='sigmoid', padding='same')(temp)
-
-        # decoded = Dense(3)(inputs)
         model = Model(inputs, decoded)
         if self.init_decoder is not None:
             model.load_weights(self.init_decoder)
@@ -201,28 +176,47 @@ class AutoEncoder:
         return model
 
     def encoder_decoder(self):
-        ec = self._encoder()
-        dc = self._decoder()
+        inputs = Input(shape=(None, None, 3))
+        # 256 x 256
 
-        inputs = Input(shape=self.input_shape)
-        ec_out = ec(inputs)
-        dc_out = dc(ec_out)
-        model = Model(inputs, dc_out)
+        # encoder
+
+        conv1 = Conv2D(16, (3, 3), activation='relu', padding='same')(inputs)
+        conv1 = Conv2D(16, (3, 3), activation='relu', padding='same')(conv1)
+        pool1 = MaxPooling2D((2, 2), padding='same')(conv1) # 128
+        conv2 = Conv2D(32, (3, 3), activation='relu', padding='same')(pool1)
+        conv2 = Conv2D(32, (3, 3), activation='relu', padding='same')(conv2)
+        pool2 = MaxPooling2D((2, 2), padding='same')(conv2) # 64
+        conv3 = Conv2D(64, (3, 3), activation='relu', padding='same')(pool2)
+        conv3 = Conv2D(64, (3, 3), activation='relu', padding='same')(conv3)
+        drop3 = Dropout(0.5)(conv3)
+        pool3 = MaxPooling2D((2, 2), padding='same')(drop3) # 32
+
+
+        conv4 = Conv2D(128, (3, 3), activation='relu', padding='same')(pool3)
+        conv4 = Conv2D(128, (3, 3), activation='relu', padding='same')(conv4)
+        drop4 = Dropout(0.5)(conv4)
+
+        # decoder
+
+        up5 = Conv2D(64, (3, 3), activation='relu', padding='same')(UpSampling2D((2, 2))(drop4)) # 64
+        merge5 = concatenate([drop3, up5], axis=3)
+        conv5 = Conv2D(64, (3, 3), activation='relu', padding='same')(merge5)
+        conv5 = Conv2D(64, (3, 3), activation='relu', padding='same')(conv5)
+
+        up6 = Conv2D(32, (3, 3), activation='relu', padding='same')(UpSampling2D((2, 2))(conv5)) # 128
+        merge6 = concatenate([conv2, up6], axis=3)
+        conv6 = Conv2D(32, (3, 3), activation='relu', padding='same')(merge6)
+        conv6 = Conv2D(32, (3, 3), activation='relu', padding='same')(conv6)
+        conv6 = Conv2D(3, (3, 3), activation='sigmoid', padding='same')(conv6)
+
+
+        model = Model(inputs, conv6)
 
         self.model = model
 
-        print("Encoder: ")
-        print(ec.summary())
-        print ("Decoder: ")
-        print(dc.summary())
         print("Autoencoder: ")
         print(self.model.summary())
-
-
-        print("Encoder output: ")
-        print(ec_out)
-        print("Decoder output: ")
-        print(dc_out)
 
         return model
 
@@ -285,7 +279,7 @@ class AutoEncoder:
         decoder_file = current_weights_folder + '/decoder_weights.h5'
         ae_file = current_weights_folder + '/ae_weights.h5'
 
-        self.encoder.save(encoder_file)
-        self.decoder.save(decoder_file)
+        # self.encoder.save(encoder_file)
+        # self.decoder.save(decoder_file)
         self.model.save(ae_file)
 
