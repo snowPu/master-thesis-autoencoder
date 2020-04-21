@@ -256,7 +256,7 @@ class AutoEncoder:
         # need to change output here later on if we want to compare with lower resolution which is a different data set
         csv_logger = CSVLogger(log_file, append=True, separator=';')
         mc = keras.callbacks.ModelCheckpoint(ae_file + '{epoch:08d}.h5',
-                                             save_weights_only=True, period=1)
+                                             save_weights_only=True, period=2)
         return self.model.fit(self.x, self.y,
                               epochs=epochs,
                               batch_size=batch_size,
