@@ -8,7 +8,7 @@ import cv2
 # optimizer = 'adam'
 
 # model_folder = 'weights/weights_' + loss + '_' + optimizer
-model_folder_name = 'weights_perceptual_ssim_nadam_10_0.0002_0.9_0.999_1587457480.264505'
+model_folder_name = 'weights_perceptual_ssim_nadam_30_0.0002_0.9_0.999_1587460819.462173'
 model_folder = 'weights/' + model_folder_name
 output_folder = 'autoencoder/' + model_folder_name
 
