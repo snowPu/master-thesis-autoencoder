@@ -37,8 +37,8 @@ y = np.array(y) / 255
 
 
 LOSS = 'perceptual_ssim'
-EPOCHS = 5
-BATCH_SIZE = 3
+EPOCHS = 10
+BATCH_SIZE = 32
 
 OPTIMIZER_NAME = 'nadam'
 

@@ -12,8 +12,9 @@ model_folder_name = 'weights_perceptual_ssim_nadam_1000_0.0002_0.9_0.999_1587342
 model_folder = 'weights/' + model_folder_name
 output_folder = 'autoencoder/' + model_folder_name
 
-encoder = load_model(r'./' + model_folder + '/encoder_weights.h5', compile=False)
-decoder = load_model(r'./' + model_folder + '/decoder_weights.h5', compile=False)
+# encoder = load_model(r'./' + model_folder + '/encoder_weights.h5', compile=False)
+# decoder = load_model(r'./' + model_folder + '/decoder_weights.h5', compile=False)
+ae = load_model(r'./' + model_folder + '/ae_weights.h5', compile=False)
 
 test_folder = '../../mipmap_LPF_SS'
 
@@ -60,8 +61,10 @@ for mipmap_entry in mipmap_test_io:
         #
         # print(output_image_shape)
 
-        x = encoder.predict(input_np)
-        y = decoder.predict(x)
+        # x = encoder.predict(input_np)
+        # y = decoder.predict(x)
+
+        y = ae.predict(input_np)
 
         y_image = np.uint8((y[0] * 255))
 
