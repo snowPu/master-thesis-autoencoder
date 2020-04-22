@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c48734c0-a00d-456a-a0c8-cfbc0e8e2ec5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" />
       <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="conv_autoencoder_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+            <state relative-caret-position="397">
+              <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="55" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -26,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image_downscaling/test.py">
+      <file leaf-file-name="conv_autoencoder_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+            <state relative-caret-position="612">
+              <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -38,21 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conv_autoencoder_test.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="36" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conv_autoencoder.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="conv_autoencoder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
-              <caret line="226" column="8" lean-forward="false" selection-start-line="226" selection-start-column="8" selection-end-line="226" selection-end-column="8" />
+            <state relative-caret-position="431">
+              <caret line="261" column="75" lean-forward="false" selection-start-line="261" selection-start-column="69" selection-end-line="261" selection-end-column="75" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -100,9 +91,9 @@
         <option value="$PROJECT_DIR$/image_downscaling/test.py" />
         <option value="$PROJECT_DIR$/image_downscaling/main.py" />
         <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_2.py" />
-        <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" />
-        <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" />
         <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" />
+        <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" />
+        <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" />
       </list>
     </option>
   </component>
@@ -345,7 +336,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -364,7 +361,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="20" column="67" lean-forward="false" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="67" />
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -373,7 +372,7 @@
         <state relative-caret-position="440">
           <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="53" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -432,7 +431,7 @@
         <state relative-caret-position="187">
           <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="53" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -473,7 +472,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="56" lean-forward="false" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -522,7 +523,7 @@
         <state relative-caret-position="187">
           <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="53" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -531,7 +532,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -549,7 +552,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -558,7 +563,7 @@
         <state relative-caret-position="187">
           <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="53" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -594,7 +599,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -603,7 +610,7 @@
         <state relative-caret-position="440">
           <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="53" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -649,7 +656,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="20" column="67" lean-forward="false" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="67" />
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -658,7 +667,7 @@
         <state relative-caret-position="440">
           <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="53" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -749,25 +758,15 @@
         <state relative-caret-position="289">
           <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="226" column="8" lean-forward="false" selection-start-line="226" selection-start-column="8" selection-end-line="226" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+        <state relative-caret-position="397">
+          <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="55" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -776,9 +775,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="36" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="612">
+          <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="261" column="75" lean-forward="false" selection-start-line="261" selection-start-column="69" selection-end-line="261" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

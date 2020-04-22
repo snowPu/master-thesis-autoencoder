@@ -2,19 +2,27 @@ from keras.models import load_model
 import numpy as np
 import os
 import cv2
+from conv_autoencoder import *
 
 #
 # loss = 'perceptual_ssim'
 # optimizer = 'adam'
 
 # model_folder = 'weights/weights_' + loss + '_' + optimizer
-model_folder_name = 'weights_perceptual_ssim_nadam_30_0.0002_0.9_0.999_1587466859.525644'
+model_folder_name = 'weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406'
 model_folder = 'weights/' + model_folder_name
 output_folder = 'autoencoder/' + model_folder_name
 
 # encoder = load_model(r'./' + model_folder + '/encoder_weights.h5', compile=False)
 # decoder = load_model(r'./' + model_folder + '/decoder_weights.h5', compile=False)
-ae = load_model(r'./' + model_folder + '/ae_weights.h5', compile=False)
+# ae = load_model(r'./' + model_folder + '/ae_weights_00000390.h5', compile=False)
+
+a = AutoEncoder(x=None, y=None, encoder_weights=None, decoder_weights=None)
+model = a.encoder_decoder()
+print(model.summary())
+model.load_weights(r'./' + model_folder + '/ae_weights_00000390.h5')
+print(model)
+
 
 test_folder = '../../mipmap_LPF_SS'
 
@@ -65,7 +73,7 @@ for mipmap_entry in mipmap_test_io:
         # x = encoder.predict(input_np)
         # y = decoder.predict(x)
 
-        y = ae.predict(input_np)
+        y = model.predict(input_np)
 
         y_image = np.uint8((y[0] * 255))
 

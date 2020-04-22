@@ -50,7 +50,7 @@ def MSSSIMLoss(y_true, y_pred):
   return 1 - tf.reduce_mean(tf.image.ssim_multiscale(y_true, y_pred, 1.0, power_factors=(0.0448, 0.2856, 0.3001, 0.2363)))
 
 def VGG_SSIM_Loss(y_true, y_pred):
-    return 0.65 * VGGloss(y_true, y_pred) + 0.35 * SSIMLoss(y_true, y_pred)
+    return 0.6 * VGGloss(y_true, y_pred) + 0.4 * SSIMLoss(y_true, y_pred)
 
 def VGG_MSSSIM_Loss(y_true, y_pred):
     return 0.6 * VGGloss(y_true, y_pred) + 0.4 * MSSSIMLoss(y_true, y_pred)
@@ -95,11 +95,11 @@ class AutoEncoder:
             'nadam': self.nadam_parameters
         }
 
+        if x is not None:
+            self.input_shape = self.x[0].shape
+            self.output_shape = self.y[0].shape
 
-        self.input_shape = self.x[0].shape
-        self.output_shape = self.y[0].shape
-
-        self.encoding_dim = int(self.input_shape[0] / 8)
+            self.encoding_dim = int(self.input_shape[0] / 8)
 
         self.losses = {
             'perceptual': VGGloss,
@@ -200,8 +200,8 @@ class AutoEncoder:
         conv3 = BatchNormalization()(conv3)
         conv3 = Conv2D(128, (3, 3), activation='relu', padding='same')(conv3)
         conv3 = BatchNormalization()(conv3)
-        # drop3 = Dropout(0.5)(conv3)
-        pool3 = MaxPooling2D((2, 2), padding='same')(conv3) # 32
+        drop3 = Dropout(0.5)(conv3)
+        pool3 = MaxPooling2D((2, 2), padding='same')(drop3) # 32
 
 
         conv4 = Conv2D(256, (3, 3), activation='relu', padding='same')(pool3)
@@ -211,7 +211,7 @@ class AutoEncoder:
         # decoder
 
         up5 = Conv2D(128, (3, 3), activation='relu', padding='same')(Conv2DTranspose(128, (3, 3), strides=(2, 2), padding='same')(conv4)) # 64
-        merge5 = concatenate([conv3, up5], axis=3)
+        merge5 = concatenate([drop3, up5], axis=3)
         conv5 = Conv2D(128, (3, 3), activation='relu', padding='same')(merge5)
         conv5 = BatchNormalization()(conv5)
         conv5 = Conv2D(128, (3, 3), activation='relu', padding='same')(conv5)
