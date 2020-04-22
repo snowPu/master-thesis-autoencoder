@@ -31,10 +31,11 @@ mipmap_test_io = [
      'output': test_folder + '/8x8/' + output_folder},
     {'input': test_folder + '/8x8/' + output_folder,
      'output': test_folder + '/4x4/' + output_folder},
-    {'input': test_folder + '/4x4/' + output_folder,
-     'output': test_folder + '/2x2/' + output_folder},
-    {'input': test_folder + '/2x2/' + output_folder,
-     'output': test_folder + '/1x1/' + output_folder}]
+    # {'input': test_folder + '/4x4/' + output_folder,
+    #  'output': test_folder + '/2x2/' + output_folder},
+    # {'input': test_folder + '/2x2/' + output_folder,
+    #  'output': test_folder + '/1x1/' + output_folder}
+]
 
 
 for mipmap_entry in mipmap_test_io:

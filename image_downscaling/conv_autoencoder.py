@@ -189,27 +189,29 @@ class AutoEncoder:
         conv1 = Conv2D(16, (3, 3), activation='relu', padding='same')(conv1)
         conv1 = BatchNormalization()(conv1)
         pool1 = MaxPooling2D((2, 2), padding='same')(conv1) # 128
+
         conv2 = Conv2D(64, (3, 3), activation='relu', padding='same')(pool1)
         conv2 = BatchNormalization()(conv2)
         conv2 = Conv2D(64, (3, 3), activation='relu', padding='same')(conv2)
         conv2 = BatchNormalization()(conv2)
         pool2 = MaxPooling2D((2, 2), padding='same')(conv2) # 64
+
         conv3 = Conv2D(128, (3, 3), activation='relu', padding='same')(pool2)
         conv3 = BatchNormalization()(conv3)
         conv3 = Conv2D(128, (3, 3), activation='relu', padding='same')(conv3)
         conv3 = BatchNormalization()(conv3)
-        drop3 = Dropout(0.5)(conv3)
-        pool3 = MaxPooling2D((2, 2), padding='same')(drop3) # 32
+        # drop3 = Dropout(0.5)(conv3)
+        pool3 = MaxPooling2D((2, 2), padding='same')(conv3) # 32
 
 
         conv4 = Conv2D(256, (3, 3), activation='relu', padding='same')(pool3)
         conv4 = Conv2D(256, (3, 3), activation='relu', padding='same')(conv4)
-        drop4 = Dropout(0.5)(conv4)
+        # drop4 = Dropout(0.5)(conv4)
 
         # decoder
 
-        up5 = Conv2D(128, (3, 3), activation='relu', padding='same')(Conv2DTranspose(128, (3, 3), strides=(2, 2), padding='same')(drop4)) # 64
-        merge5 = concatenate([drop3, up5], axis=3)
+        up5 = Conv2D(128, (3, 3), activation='relu', padding='same')(Conv2DTranspose(128, (3, 3), strides=(2, 2), padding='same')(conv4)) # 64
+        merge5 = concatenate([conv3, up5], axis=3)
         conv5 = Conv2D(128, (3, 3), activation='relu', padding='same')(merge5)
         conv5 = BatchNormalization()(conv5)
         conv5 = Conv2D(128, (3, 3), activation='relu', padding='same')(conv5)
@@ -221,6 +223,7 @@ class AutoEncoder:
         conv6 = BatchNormalization()(conv6)
         conv6 = Conv2D(64, (3, 3), activation='relu', padding='same')(conv6)
         conv6 = BatchNormalization()(conv6)
+
         conv6 = Conv2D(3, (3, 3), activation='sigmoid', padding='same')(conv6)
 
 
