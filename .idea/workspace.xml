@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c48734c0-a00d-456a-a0c8-cfbc0e8e2ec5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" />
-      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +16,8 @@
       <file leaf-file-name="conv_autoencoder_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="55" />
+            <state relative-caret-position="533">
+              <caret line="54" column="18" lean-forward="false" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="18" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -31,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
-              <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+              <caret line="36" column="56" lean-forward="false" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -42,8 +40,8 @@
       <file leaf-file-name="conv_autoencoder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="261" column="75" lean-forward="false" selection-start-line="261" selection-start-column="69" selection-end-line="261" selection-end-column="75" />
+            <state relative-caret-position="247">
+              <caret line="224" column="43" lean-forward="false" selection-start-line="224" selection-start-column="43" selection-end-line="224" selection-end-column="43" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -92,8 +90,8 @@
         <option value="$PROJECT_DIR$/image_downscaling/main.py" />
         <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_2.py" />
         <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" />
-        <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" />
         <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" />
+        <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" />
       </list>
     </option>
   </component>
@@ -105,8 +103,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1263" />
-    <option name="height" value="1047" />
+    <option name="width" value="881" />
+    <option name="height" value="831" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -232,17 +230,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1263" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="881" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41098082" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="338" height="640" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.100987926" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13237411" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.061512884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09013398" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -341,8 +339,13 @@
           <url>file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py</url>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -765,8 +768,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="55" />
+        <state relative-caret-position="533">
+          <caret line="54" column="18" lean-forward="false" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="18" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -776,7 +779,7 @@
     <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+          <caret line="36" column="56" lean-forward="false" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -785,8 +788,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="261" column="75" lean-forward="false" selection-start-line="261" selection-start-column="69" selection-end-line="261" selection-end-column="75" />
+        <state relative-caret-position="247">
+          <caret line="224" column="43" lean-forward="false" selection-start-line="224" selection-start-column="43" selection-end-line="224" selection-end-column="43" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

@@ -224,10 +224,15 @@ class AutoEncoder:
         conv6 = Conv2D(64, (3, 3), activation='relu', padding='same')(conv6)
         conv6 = BatchNormalization()(conv6)
 
-        conv6 = Conv2D(3, (3, 3), activation='sigmoid', padding='same')(conv6)
+        conv7 = Conv2D(16, (3, 3), activation='relu', padding='same')(conv6)
+        conv7 = BatchNormalization()(conv7)
+        conv7 = Conv2D(16, (3, 3), activation='relu', padding='same')(conv7)
+        conv7 = BatchNormalization()(conv7)
+
+        conv8 = Conv2D(3, (3, 3), activation='sigmoid', padding='same')(conv7)
 
 
-        model = Model(inputs, conv6)
+        model = Model(inputs, conv8)
 
         self.model = model
 
