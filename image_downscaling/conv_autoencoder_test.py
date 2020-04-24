@@ -3,6 +3,7 @@ import numpy as np
 import os
 import cv2
 from conv_autoencoder import *
+from keras import backend as K
 
 #
 # loss = 'perceptual_ssim'
@@ -10,9 +11,10 @@ from conv_autoencoder import *
 
 # model_folder = 'weights/weights_' + loss + '_' + optimizer
 model_folder_name = 'weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406'
+epochs = '00000360'
+model_epoch_name = 'ae_weights_' + epochs
 model_folder = 'weights/' + model_folder_name
-output_folder = 'autoencoder/' + model_folder_name
-
+output_folder = 'autoencoder/' + model_folder_name + '_' + epochs
 # encoder = load_model(r'./' + model_folder + '/encoder_weights.h5', compile=False)
 # decoder = load_model(r'./' + model_folder + '/decoder_weights.h5', compile=False)
 # ae = load_model(r'./' + model_folder + '/ae_weights_00000390.h5', compile=False)
@@ -20,7 +22,7 @@ output_folder = 'autoencoder/' + model_folder_name
 a = AutoEncoder(x=None, y=None, encoder_weights=None, decoder_weights=None)
 model = a.encoder_decoder()
 print(model.summary())
-model.load_weights(r'./' + model_folder + '/ae_weights_00000390.h5')
+model.load_weights(r'./' + model_folder + '/' + model_epoch_name  + '.h5')
 print(model)
 
 
@@ -84,6 +86,8 @@ for mipmap_entry in mipmap_test_io:
         # im.save(output_image_path)
         print(output_image_path)
         cv2.imwrite(output_image_path, y_image)
+
+K.clear_session()
 #
 # print('Input: {}'.format(input_np))
 # print('Encoder: {}'.format(x))
