@@ -50,7 +50,7 @@ def MSSSIMLoss(y_true, y_pred):
   return 1 - tf.reduce_mean(tf.image.ssim_multiscale(y_true, y_pred, 1.0, power_factors=(0.0448, 0.2856, 0.3001, 0.2363)))
 
 def VGG_SSIM_Loss(y_true, y_pred):
-    return 0.75 * VGGloss(y_true, y_pred) + 0.25 * SSIMLoss(y_true, y_pred)
+    return 0.85 * VGGloss(y_true, y_pred) + 0.15 * SSIMLoss(y_true, y_pred)
 
 def VGG_MSSSIM_Loss(y_true, y_pred):
     return 0.6 * VGGloss(y_true, y_pred) + 0.4 * MSSSIMLoss(y_true, y_pred)

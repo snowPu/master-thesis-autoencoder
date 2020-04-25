@@ -10,8 +10,8 @@ from keras import backend as K
 # optimizer = 'adam'
 
 # model_folder = 'weights/weights_' + loss + '_' + optimizer
-model_folder_name = 'weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406'
-epochs = '00000360'
+model_folder_name = 'weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587746299.670421'
+epochs = 'final'
 model_epoch_name = 'ae_weights_' + epochs
 model_folder = 'weights/' + model_folder_name
 output_folder = 'autoencoder/' + model_folder_name + '_' + epochs
