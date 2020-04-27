@@ -50,7 +50,7 @@ def MSSSIMLoss(y_true, y_pred):
   return 1 - tf.reduce_mean(tf.image.ssim_multiscale(y_true, y_pred, 1.0, power_factors=(0.0448, 0.2856, 0.3001, 0.2363)))
 
 def VGG_SSIM_Loss(y_true, y_pred):
-    return 0.8 * VGGloss(y_true, y_pred) + 0.2 * SSIMLoss(y_true, y_pred)
+    return 0.75 * VGGloss(y_true, y_pred) + 0.25 * SSIMLoss(y_true, y_pred)
 
 def VGG_MSSSIM_Loss(y_true, y_pred):
     return 0.6 * VGGloss(y_true, y_pred) + 0.4 * MSSSIMLoss(y_true, y_pred)
@@ -226,10 +226,10 @@ class AutoEncoder:
 
         # conv7 = Conv2D(16, (3, 3), activation='relu', padding='same')(conv6)
         # conv7 = BatchNormalization()(conv7)
-        # conv7 = Conv2D(16, (3, 3), activation='relu', padding='same')(conv7)
-        # conv7 = BatchNormalization()(conv7)
 
-        conv7 = Conv2D(3, (3, 3), activation='sigmoid', padding='same')(conv6)
+        conv7 = Conv2D(16, (3, 3), activation='relu', padding='same')(conv6)
+        conv7 = BatchNormalization()(conv7)
+        conv7 = Conv2D(3, (3, 3), activation='sigmoid', padding='same')(conv7)
 
 
         model = Model(inputs, conv7)
