@@ -205,9 +205,9 @@ class AutoEncoder:
 
 
         conv4 = Conv2D(256, (3, 3), activation='relu', padding='same')(pool3)
-        conv4 = BatchNormalization()(conv4)
+        # conv4 = BatchNormalization()(conv4)
         conv4 = Conv2D(256, (3, 3), activation='relu', padding='same')(conv4)
-        conv4 = BatchNormalization()(conv4)
+        # conv4 = BatchNormalization()(conv4)
         # drop4 = Dropout(0.5)(conv4)
 
         # decoder
