@@ -64,8 +64,8 @@ for mipmap_entry in mipmap_test_io:
     if not os.path.exists(test_output_path):
         os.mkdir(test_output_path)
 
-    test_images = os.listdir(test_input_path)
-
+    # test_images = os.listdir(test_input_path)
+    test_images = ['grass.png']
     for test_image in test_images:
         input_image = cv2.imread(os.path.join(test_input_path, test_image))
 
