@@ -56,7 +56,7 @@ def VGG_MSSSIM_Loss(y_true, y_pred):
     return 0.6 * VGGloss(y_true, y_pred) + 0.4 * MSSSIMLoss(y_true, y_pred)
 
 def VGG_MSE_Loss(y_true, y_pred):
-    return 0.8 * VGGloss(y_true, y_pred) + 0.2 * tf.keras.losses.MSE(y_true, y_pred)
+    return 0.75 * VGGloss(y_true, y_pred) + 0.25 * tf.keras.losses.MSE(y_true, y_pred)
 
 def VGG_SSIM_MSE_Loss(y_true, y_pred):
     return VGGloss(y_true, y_pred) * .5 + SSIMLoss(y_true, y_pred) * .4 + tf.keras.losses.MSE(y_true, y_pred) * .1
@@ -205,9 +205,9 @@ class AutoEncoder:
 
 
         conv4 = Conv2D(256, (3, 3), activation='relu', padding='same')(pool3)
-        # conv4 = BatchNormalization()(conv4)
+        conv4 = BatchNormalization()(conv4)
         conv4 = Conv2D(256, (3, 3), activation='relu', padding='same')(conv4)
-        # conv4 = BatchNormalization()(conv4)
+        conv4 = BatchNormalization()(conv4)
         # drop4 = Dropout(0.5)(conv4)
 
         # decoder
