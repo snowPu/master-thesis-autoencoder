@@ -11,8 +11,8 @@ import lpf_ss
 # optimizer = 'adam'
 
 # model_folder = 'weights/weights_' + loss + '_' + optimizer
-model_folder_name = 'weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587746299.670421'
-epochs = '00000420'
+model_folder_name = 'weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1588055670.78569'
+epochs = '00000270'
 model_epoch_name = 'ae_weights_' + epochs
 model_folder = 'weights/' + model_folder_name
 output_folder = 'autoencoder/' + model_folder_name + '_' + epochs
@@ -64,8 +64,8 @@ for mipmap_entry in mipmap_test_io:
     if not os.path.exists(test_output_path):
         os.mkdir(test_output_path)
 
-    # test_images = os.listdir(test_input_path)
-    test_images = ['grass.png']
+    test_images = os.listdir(test_input_path)
+    # test_images = ['grass.png']
     for test_image in test_images:
         input_image = cv2.imread(os.path.join(test_input_path, test_image))
 
