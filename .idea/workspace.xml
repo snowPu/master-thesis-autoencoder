@@ -28,8 +28,8 @@
       <file leaf-file-name="conv_autoencoder_test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state relative-caret-position="459">
+              <caret line="33" column="56" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="56" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -40,11 +40,10 @@
       <file leaf-file-name="conv_autoencoder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1028">
-              <caret line="218" column="42" lean-forward="true" selection-start-line="218" selection-start-column="42" selection-end-line="218" selection-end-column="42" />
+            <state relative-caret-position="420">
+              <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
-                <marker date="1588083152950" expanded="true" signature="2100:2114" ph="..." />
               </folding>
             </state>
           </provider>
@@ -84,6 +83,7 @@
       <find>ssim</find>
       <find>log_dir</find>
       <find>log</find>
+      <find>m</find>
     </findStrings>
     <replaceStrings>
       <replace>test_folder + '</replace>
@@ -245,17 +245,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1552" height="840" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41098082" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="338" height="640" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13068181" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19235925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15298508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -481,7 +481,6 @@
           <caret line="32" column="42" lean-forward="false" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1588083152950" expanded="true" signature="2100:2114" ph="..." />
           </folding>
         </state>
       </provider>
@@ -502,7 +501,6 @@
           <caret line="210" column="45" lean-forward="false" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1588083152950" expanded="true" signature="2100:2114" ph="..." />
           </folding>
         </state>
       </provider>
@@ -543,7 +541,6 @@
           <caret line="95" column="9" lean-forward="false" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1588083152950" expanded="true" signature="2100:2114" ph="..." />
           </folding>
         </state>
       </provider>
@@ -621,7 +618,6 @@
           <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1588083152950" expanded="true" signature="2100:2114" ph="..." />
           </folding>
         </state>
       </provider>
@@ -639,7 +635,6 @@
           <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="25" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1588083152950" expanded="true" signature="2100:2114" ph="..." />
           </folding>
         </state>
       </provider>
@@ -775,16 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -797,11 +782,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1028">
-          <caret line="218" column="42" lean-forward="true" selection-start-line="218" selection-start-column="42" selection-end-line="218" selection-end-column="42" />
+        <state relative-caret-position="420">
+          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1588083152950" expanded="true" signature="2100:2114" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="33" column="56" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>

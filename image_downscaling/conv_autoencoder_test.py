@@ -12,7 +12,7 @@ import lpf_ss
 
 # model_folder = 'weights/weights_' + loss + '_' + optimizer
 model_folder_name = 'weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587746299.670421'
-epochs = '00000420'
+epochs = '00000390'
 model_epoch_name = 'ae_weights_' + epochs
 model_folder = 'weights/' + model_folder_name
 output_folder = 'autoencoder/' + model_folder_name + '_' + epochs
@@ -27,7 +27,7 @@ model.load_weights(r'./' + model_folder + '/' + model_epoch_name  + '.h5')
 print(model)
 
 
-test_folder = '../../mipmap_LPF_SS'
+test_folder = '../../threejsrockstutorial/mipmap_LPF_SS'
 
 mipmap_test_io = [
     {'input': test_folder + '/256x256',
