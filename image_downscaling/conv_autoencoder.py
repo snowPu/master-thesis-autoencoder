@@ -1,25 +1,23 @@
-import keras
-from keras.layers import Input, Dense
+
 import keras
 from keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, Dropout, concatenate, BatchNormalization, Conv2DTranspose
-from keras.layers import ReLU
 from keras.layers import Input, Dense
 from keras.models import Model
 import numpy as np
-# from tensorflow import set_random_seed
 import tensorflow as tf
 import os
-# import math
 from keras.applications.vgg19 import VGG19
 import keras.backend as keras_backend
 from matplotlib import pyplot as plt
 from datetime import datetime
 from keras.callbacks import CSVLogger
 
-# Define VGG Model
 
+# Define VGG Model
 vgg_model = VGG19(include_top=False, weights='imagenet', input_shape=(100, 100, 3))
 
+
+# optimizers
 ADADELTA = keras.optimizers.Adadelta(learning_rate=1.0, rho=0.95)
 SGD = keras.optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 ADAMAX = keras.optimizers.Adamax(learning_rate=0.002, beta_1=0.9, beta_2=0.999)
