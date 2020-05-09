@@ -2,7 +2,150 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c48734c0-a00d-456a-a0c8-cfbc0e8e2ec5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" />
       <change beforePath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" afterPath="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/lpf_ss.py" afterPath="$PROJECT_DIR$/image_downscaling/lpf_ss.py" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_mse_nadam_300_0.0002_0.9_0.999_1587031880.344799/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_mse_nadam_300_0.0002_0.9_0.999_1587031880.344799/decoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_mse_nadam_300_0.0002_0.9_0.999_1587031880.344799/encoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_msssim_mse_nadam_800_0.0002_0.9_0.999_1587153420.470902/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_msssim_mse_nadam_800_0.0002_0.9_0.999_1587153420.470902/decoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_msssim_mse_nadam_800_0.0002_0.9_0.999_1587153420.470902/encoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_msssim_nadam_1000_0.0002_0.9_0.999_1587207056.008136/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_msssim_nadam_1000_0.0002_0.9_0.999_1587207056.008136/decoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_msssim_nadam_1000_0.0002_0.9_0.999_1587207056.008136/encoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_nadam_300_0.0002_0.9_0.999_1587009849.351546/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_nadam_300_0.0002_0.9_0.999_1587009849.351546/decoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_nadam_300_0.0002_0.9_0.999_1587009849.351546/encoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_mse_nadam_500_0.0002_0.9_0.999_1586947041.876116/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_mse_nadam_500_0.0002_0.9_0.999_1586947041.876116/decoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_mse_nadam_500_0.0002_0.9_0.999_1586947041.876116/encoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_1000_0.0002_0.9_0.999_1587272880.138538/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_1000_0.0002_0.9_0.999_1587272880.138538/decoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_1000_0.0002_0.9_0.999_1587272880.138538/encoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_1000_0.0002_0.9_0.999_1587342021.930168/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_1000_0.0002_0.9_0.999_1587342021.930168/decoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_1000_0.0002_0.9_0.999_1587342021.930168/encoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_10_0.0002_0.9_0.999_1587457480.264505/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_150_0.0002_0.9_0.999_1586892998.954191/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_150_0.0002_0.9_0.999_1586892998.954191/decoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_150_0.0002_0.9_0.999_1586892998.954191/encoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_1_0.0002_0.9_0.999_1586882898.827723/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_1_0.0002_0.9_0.999_1586882898.827723/decoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_1_0.0002_0.9_0.999_1586882898.827723/encoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_1_0.0002_0.9_0.999_1586949609.724883/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_1_0.0002_0.9_0.999_1586949609.724883/decoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_1_0.0002_0.9_0.999_1586949609.724883/encoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000030.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000060.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000090.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000120.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000150.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000180.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000210.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000240.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000270.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000300.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000330.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000360.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000390.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000420.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000450.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000480.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000510.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000540.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000570.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000600.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000630.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000660.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000690.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587549700.782098/ae_weights_00000720.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000030.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000060.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000090.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000120.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000150.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000180.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000210.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000240.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000270.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000300.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000330.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000360.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000390.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000420.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000450.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000480.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000510.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_2000_0.0002_0.9_0.999_1587635395.561995/ae_weights_00000540.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_300_0.0002_0.9_0.999_1586918017.307248/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_300_0.0002_0.9_0.999_1586918017.307248/decoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_300_0.0002_0.9_0.999_1586918017.307248/encoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_30_0.0002_0.9_0.999_1587460819.462173/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_30_0.0002_0.9_0.999_1587466859.525644/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_3_0.0002_0.9_0.999_1587477164.930398/ae_weights_00000002.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_3_0.0002_0.9_0.999_1587477164.930398/ae_weights_final.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000030.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000060.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000090.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000120.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000150.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000180.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000210.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000240.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000270.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000300.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000330.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000360.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000390.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000420.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000450.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_00000480.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587477844.121406/ae_weights_final.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587540438.163203/ae_weights_00000030.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587540438.163203/ae_weights_00000060.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000030.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000060.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000090.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000120.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000150.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000180.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000210.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000240.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000270.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000300.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000330.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000360.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000390.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000420.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000450.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_00000480.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587806686.191427/ae_weights_final.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000030.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000060.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000090.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000120.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000150.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000180.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000210.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000240.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000270.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000300.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000330.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000360.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000390.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000420.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000450.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_00000480.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587887503.587722/ae_weights_final.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_60_0.0002_0.9_0.999_1587476159.905766/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_800_0.0002_0.9_0.999_1586993563.158895/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_800_0.0002_0.9_0.999_1586993563.158895/decoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_perceptual_ssim_nadam_800_0.0002_0.9_0.999_1586993563.158895/encoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_ssim_nadam_300_0.0002_0.9_0.999_1587232386.85339/ae_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_ssim_nadam_300_0.0002_0.9_0.999_1587232386.85339/decoder_weights.h5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_downscaling/weights/weights_ssim_nadam_300_0.0002_0.9_0.999_1587232386.85339/encoder_weights.h5" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +159,8 @@
       <file leaf-file-name="conv_autoencoder_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="55" />
+            <state relative-caret-position="561">
+              <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -25,11 +168,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conv_autoencoder_test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="conv_autoencoder_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="33" column="56" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="56" />
+            <state relative-caret-position="1105">
+              <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -40,8 +183,8 @@
       <file leaf-file-name="conv_autoencoder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+            <state relative-caret-position="-17">
+              <caret line="197" column="0" lean-forward="true" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -49,11 +192,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lpf_ss.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="lpf_ss.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/image_downscaling/lpf_ss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="238">
+              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -102,10 +245,10 @@
         <option value="$PROJECT_DIR$/image_downscaling/test.py" />
         <option value="$PROJECT_DIR$/image_downscaling/main.py" />
         <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_2.py" />
-        <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" />
-        <option value="$PROJECT_DIR$/image_downscaling/lpf_ss.py" />
-        <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" />
         <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py" />
+        <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py" />
+        <option value="$PROJECT_DIR$/image_downscaling/conv_autoencoder.py" />
+        <option value="$PROJECT_DIR$/image_downscaling/lpf_ss.py" />
       </list>
     </option>
   </component>
@@ -255,12 +398,12 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15298508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35074627" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25586355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -270,7 +413,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41098082" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="338" height="640" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41098082" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="0" y="0" width="338" height="640" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -278,12 +421,12 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15831557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25586355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -760,20 +903,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_downscaling/lpf_ss.py">
+    <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="1105">
+          <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="55" />
+        <state relative-caret-position="561">
+          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -782,20 +925,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+        <state relative-caret-position="-17">
+          <caret line="197" column="0" lean-forward="true" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_downscaling/conv_autoencoder_test.py">
+    <entry file="file://$PROJECT_DIR$/image_downscaling/lpf_ss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="33" column="56" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="56" />
+        <state relative-caret-position="238">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

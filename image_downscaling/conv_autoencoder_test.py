@@ -6,19 +6,11 @@ from conv_autoencoder import *
 from keras import backend as K
 import lpf_ss
 
-#
-# loss = 'perceptual_ssim'
-# optimizer = 'adam'
-
-# model_folder = 'weights/weights_' + loss + '_' + optimizer
 model_folder_name = 'weights_perceptual_ssim_nadam_500_0.0002_0.9_0.999_1587746299.670421'
 epochs = '00000390'
 model_epoch_name = 'ae_weights_' + epochs
 model_folder = 'weights/' + model_folder_name
 output_folder = 'autoencoder/' + model_folder_name + '_' + epochs
-# encoder = load_model(r'./' + model_folder + '/encoder_weights.h5', compile=False)
-# decoder = load_model(r'./' + model_folder + '/decoder_weights.h5', compile=False)
-# ae = load_model(r'./' + model_folder + '/ae_weights_00000390.h5', compile=False)
 
 a = AutoEncoder(x=None, y=None, encoder_weights=None, decoder_weights=None)
 model = a.encoder_decoder()
@@ -27,6 +19,7 @@ model.load_weights(r'./' + model_folder + '/' + model_epoch_name  + '.h5')
 print(model)
 
 
+# folder containing 256x256 pixel images
 test_folder = '../../threejsrockstutorial/mipmap_LPF_SS'
 
 mipmap_test_io = [
@@ -77,16 +70,8 @@ for mipmap_entry in mipmap_test_io:
 
             y_image = np.uint8((y[0] * 255))
         else:
+            # last two levels can't be generated using autoencoder - gaussian
             y_image = lpf_ss.downscale_by_two(input_image)
-
-
-        # output_image_shape = (int(input_image.shape[0]/ 2), int(input_image.shape[1] / 2), input_image.shape[2])
-        #
-        # print(output_image_shape)
-
-        # x = encoder.predict(input_np)
-        # y = decoder.predict(x)
-        # print(y_image)
 
         output_image_path = test_output_path + '/' +  test_image
         # im = Image.fromarray(y_image)
@@ -95,21 +80,3 @@ for mipmap_entry in mipmap_test_io:
         cv2.imwrite(output_image_path, y_image)
 
 K.clear_session()
-#
-# print('Input: {}'.format(input_np))
-# print('Encoder: {}'.format(x))
-# print('Decoder: {}'.format(y))
-# print('Decoder: {}'.format(y_image))
-
-#
-# print('R')
-# for i in range(0, 10):
-#     print(y_image[0][i][0], end=', ')
-#
-# print('G')
-# for i in range(0, 10):
-#     print(y_image[0][i][1], end=', ')
-#
-# print('B')
-# for i in range(0, 10):
-#     print(y_image[0][i][2], end=', ')

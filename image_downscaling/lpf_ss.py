@@ -14,8 +14,6 @@ def gaussian_filter_5(img):
     result = cv2.GaussianBlur(img, (5, 5), 0)
     return result
 
-
-
 # Take median of four pixels
 
 def sample_median(img):

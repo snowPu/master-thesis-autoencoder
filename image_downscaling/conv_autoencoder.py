@@ -21,15 +21,9 @@ from keras.callbacks import CSVLogger
 vgg_model = VGG19(include_top=False, weights='imagenet', input_shape=(100, 100, 3))
 
 ADADELTA = keras.optimizers.Adadelta(learning_rate=1.0, rho=0.95)
-# ADAM = keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0)
 SGD = keras.optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 ADAMAX = keras.optimizers.Adamax(learning_rate=0.002, beta_1=0.9, beta_2=0.999)
-# NADAM = keras.optimizers.Nadam(learning_rate=0.002, beta_1=0.9, beta_2=0.999)
 
-#
-# def seedy(s):
-#     np.random.seed(s)
-#     set_random_seed(s)
 
 
 def ADAM(lr, beta_1, beta_2, epsilon, decay):
@@ -131,53 +125,6 @@ class AutoEncoder:
 
         print(self.x)
 
-    def _encoder(self):
-        inputs = Input(shape=(None, None, 3))
-
-        current_dim = self.input_shape[0]
-
-        # temp = inputs
-        cnt = 0
-
-        conv1 = Conv2D(16, (3, 3), activation='relu', padding='same')(inputs)
-        conv1 = Conv2D(16, (3, 3), activation='relu', padding='same')(inputs)
-        conv1 = Conv2D(16, (3, 3), activation='relu', padding='same')(conv1)
-        pool1 = MaxPooling2D((2, 2), padding='same')(conv1)
-        conv2 = Conv2D(32, (3, 3), activation='relu', padding='same')(pool1)
-        conv2 = Conv2D(32, (3, 3), activation='relu', padding='same')(conv2)
-        pool2 = MaxPooling2D((2, 2), padding='same')(conv2)
-        conv3 = Conv2D(64, (3, 3), activation='relu', padding='same')(pool2)
-        conv3 = Conv2D(64, (3, 3), activation='relu', padding='same')(conv3)
-        encoded = MaxPooling2D((2, 2), padding='same')(conv3)
-
-        model = Model(inputs, encoded)
-        if self.init_encoder is not None:
-            model.load_weights(self.init_encoder)
-        self.encoder = model
-        return model
-
-    def _decoder(self):
-        inputs = Input(shape=(None, None, 64))
-
-        current_dim = self.encoding_dim
-        # temp = inputs
-        cnt = 0
-
-        temp = Conv2D(64, (3, 3), activation='relu', padding='same')(inputs)
-        temp = Conv2D(64, (3, 3), activation='relu', padding='same')(temp)
-        temp = UpSampling2D((2, 2))(temp)
-        temp = Conv2D(32, (3, 3), activation='relu', padding='same')(temp)
-        temp = Conv2D(32, (3, 3), activation='relu', padding='same')(temp)
-        temp = UpSampling2D((2, 2))(temp)
-        # temp = Conv2D(32, (3, 3), activation='relu', padding='same')(temp)
-        # temp = UpSampling2D((2, 2))(temp)
-        decoded = Conv2D(3, (3, 3), activation='sigmoid', padding='same')(temp)
-        model = Model(inputs, decoded)
-        if self.init_decoder is not None:
-            model.load_weights(self.init_decoder)
-        self.decoder = model
-        return model
-
     def encoder_decoder(self):
         inputs = Input(shape=(None, None, 3))
         # 256 x 256
@@ -205,10 +152,7 @@ class AutoEncoder:
 
 
         conv4 = Conv2D(256, (3, 3), activation='relu', padding='same')(pool3)
-        # conv4 = BatchNormalization()(conv4)
         conv4 = Conv2D(256, (3, 3), activation='relu', padding='same')(conv4)
-        # conv4 = BatchNormalization()(conv4)
-        # drop4 = Dropout(0.5)(conv4)
 
         # decoder
 
@@ -225,11 +169,6 @@ class AutoEncoder:
         conv6 = BatchNormalization()(conv6)
         conv6 = Conv2D(64, (3, 3), activation='relu', padding='same')(conv6)
         conv6 = BatchNormalization()(conv6)
-
-        # conv7 = Conv2D(16, (3, 3), activation='relu', padding='same')(conv6)
-        # conv7 = BatchNormalization()(conv7)
-        # conv7 = Conv2D(16, (3, 3), activation='relu', padding='same')(conv7)
-        # conv7 = BatchNormalization()(conv7)
 
         conv7 = Conv2D(3, (3, 3), activation='sigmoid', padding='same')(conv6)
 
@@ -298,21 +237,11 @@ class AutoEncoder:
 
 
     def save(self, weights_folder='weights'):
-        # if not os.path.exists(weights_folder):
-        #     os.mkdir(weights_folder)
-        # current_weights_folder = weights_folder + '_' + \
-        #                          str(self.optimizer_parameters_map[self.optimizer]['lr']) + '_' + \
-        #                          str(self.optimizer_parameters_map[self.optimizer]['beta_1']) + '_' + \
-        #                          str(self.optimizer_parameters_map[self.optimizer]['beta_2']) + '_' + \
-        #                          str(datetime.timestamp(datetime.now()))
         if not os.path.exists(self.current_weights_folder):
             os.mkdir(self.current_weights_folder)
-
         encoder_file = self.current_weights_folder + '/encoder_weights.h5'
         decoder_file = self.current_weights_folder + '/decoder_weights.h5'
         ae_file = self.current_weights_folder + '/ae_weights_final.h5'
 
-        # self.encoder.save(encoder_file)
-        # self.decoder.save(decoder_file)
         self.model.save(ae_file)
 

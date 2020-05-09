@@ -1,8 +1,6 @@
 from conv_autoencoder import *
-from conv_autoencoder import *
 import cv2
 
-# seedy(2)
 
 x_path = '../dataset/RAISENET/PROCESSED_LR/train_HR_2x_RGB'
 y_path = '../dataset/RAISENET/PROCESSED_LR/train_LR_RGB'
@@ -13,23 +11,14 @@ y = []
 
 LEARNING_RATE = 0.001
 
-# print(ADAM)
-
 file_names = os.listdir(x_path)
 cnt = 0
 for file_name in file_names:
     x.append(cv2.imread(os.path.join(x_path, file_name)))
     y.append(cv2.imread(os.path.join(y_path, file_name)))
     cnt = cnt + 1
-    # if (cnt == no_of_images):
-    #     break
     if (cnt % 100 == 0):
         print('read ' + str(cnt) + ' images.')
-#
-# for i in range(0, no_of_images):
-#     image_name = str(i) + '.png'
-#     x.append(cv2.imread(os.path.join(x_path, image_name)))
-#     y.append(cv2.imread(os.path.join(y_path, image_name)))
 
 
 x = np.array(x) / 255
@@ -41,8 +30,6 @@ EPOCHS = 500
 BATCH_SIZE = 32
 
 OPTIMIZER_NAME = 'nadam'
-
-# OPTIMIZER = OPTIMIZERS[OPTIMIZER_NAME]
 WEIGHTS_FOLDER = r'./weights/weights_' + LOSS + '_' + OPTIMIZER_NAME + '_' + str(EPOCHS)
 PLOT_FOLDER = r'./plots/' + LOSS + '_' + OPTIMIZER_NAME
 
