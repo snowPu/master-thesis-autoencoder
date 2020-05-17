@@ -14,6 +14,9 @@ Run the test file image_downscaling/conv_autoencoder_test.py after setting the r
 
 ## To train the model:
 
+Download the train dataset in the root folder of the repository from here:
+https://drive.google.com/file/d/1bZMm92vCFVYYxJW0G06CtSX0IXhlJxEg/view?usp=sharing
+
 Run image_downscaling/conv_autoencoder_main.py after tweaking the parameters as you wish.
 
 
