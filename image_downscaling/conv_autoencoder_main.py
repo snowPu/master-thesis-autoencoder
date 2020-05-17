@@ -25,11 +25,23 @@ x = np.array(x) / 255
 y = np.array(y) / 255
 
 
+# CHOICES FOR LOSS FUNCTION: 
+# perceptual, ssim, msssim, mse, 
+# perceptual_mse, perceptual_ssim, perceptual_msssim,
+# perceptual_ssim_mse, perceptual_msssim_mse  
 LOSS = 'perceptual_ssim'
+
+# STATE HOW MANY EPOCHS
 EPOCHS = 500
+
+# STATE BATCH SIZE
 BATCH_SIZE = 32
 
+# CHOICES FOR OPTIMIZER_NAME:
+# SGD, adadelta, adam, adamax, nadam
 OPTIMIZER_NAME = 'nadam'
+
+
 WEIGHTS_FOLDER = r'./weights/weights_' + LOSS + '_' + OPTIMIZER_NAME + '_' + str(EPOCHS)
 PLOT_FOLDER = r'./plots/' + LOSS + '_' + OPTIMIZER_NAME
 

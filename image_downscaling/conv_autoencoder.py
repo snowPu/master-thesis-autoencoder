@@ -101,7 +101,7 @@ class AutoEncoder:
             'perceptual_ssim': VGG_SSIM_Loss,
             'perceptual_msssim': VGG_MSSSIM_Loss,
             'perceptual_ssim_mse': VGG_SSIM_MSE_Loss,
-                'perceptual_msssim_mse': VGG_MSSSIM_MSE_Loss,
+            'perceptual_msssim_mse': VGG_MSSSIM_MSE_Loss,
             'perceptual_mse': VGG_MSE_Loss
             # 'perceptual_ssim_mse': [VGGloss, SSIMLoss, 'mse']
         }
